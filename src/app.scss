@@ -1,0 +1,49 @@
+$card-hover-transition: 0.25s;
+$card-hover-transition-delay: 0s;
+$control-width: 35px;
+$control-height: 25px;
+$card-height: 3.5em;
+
+.row {
+  display: flex;
+}
+
+.col {
+  flex: 1 0 0;
+  max-width: 100%;
+  padding: 1em;
+}
+
+.drag-and-drop {
+  display: flex;
+  justify-items: center;
+  flex-direction: column;
+  padding: 2em;
+  height: 100vh;
+  @media screen and (max-width: 640px) {
+    padding: 2em 0;
+  }
+
+  .drag-and-drop-container {
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+
+    .drag-wrapper {
+      position: relative;
+    }
+
+    .drop-container {
+      margin-bottom: 0.5em;
+    }
+    .drag-item > *,
+    .drop-container {
+      position: relative;
+      width: 100%;
+      border: 1px dashed #666666;
+      background-color: #f4f4f4;
+      min-height: $card-height;
+    }
+  }
+}

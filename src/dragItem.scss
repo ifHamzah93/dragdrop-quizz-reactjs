@@ -1,0 +1,24 @@
+$card-height: 3.5em;
+
+.drag-item {
+  padding-bottom: 0.5em;
+  position: relative;
+}
+
+.card {
+  font-family: Arial;
+  outline: 1px solid #000;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  background: #000;
+  color: #fff;
+  min-height: $card-height;
+  > * {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+  }
+}
